@@ -1,0 +1,300 @@
+{
+ "version": 1,
+ "sheet": "demo-sheet.png",
+ "cell": {
+  "w": 96,
+  "h": 112
+ },
+ "cols": 5,
+ "rows": 1,
+ "display": {
+  "w": 192,
+  "h": 224
+ },
+ "displayScale": 2.0,
+ "anchor": {
+  "x": 0.5,
+  "y": 1
+ },
+ "baselineY": 100,
+ "states": {
+  "idle": {
+   "fps": 7,
+   "loop": true,
+   "pingpong": true,
+   "mirrorable": false,
+   "frames": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ]
+  },
+  "wait": {
+   "fps": 5,
+   "loop": true,
+   "pingpong": true,
+   "mirrorable": false,
+   "frames": [
+    [
+     0,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ]
+  },
+  "walk": {
+   "fps": 8,
+   "loop": true,
+   "pingpong": true,
+   "mirrorable": true,
+   "frames": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ]
+  },
+  "react": {
+   "fps": 9,
+   "loop": false,
+   "pingpong": true,
+   "mirrorable": false,
+   "frames": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ]
+  },
+  "working": {
+   "fps": 8,
+   "loop": true,
+   "pingpong": true,
+   "mirrorable": false,
+   "frames": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ]
+  },
+  "sleep": {
+   "fps": 4,
+   "loop": true,
+   "pingpong": true,
+   "mirrorable": false,
+   "frames": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ]
+  },
+  "supervise": {
+   "fps": 7,
+   "loop": true,
+   "pingpong": true,
+   "mirrorable": false,
+   "frames": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ]
+  },
+  "dead": {
+   "fps": 8,
+   "loop": true,
+   "pingpong": true,
+   "mirrorable": false,
+   "frames": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ]
+  }
+ },
+ "views": {
+  "front": {
+   "cell": [
+    0,
+    0
+   ],
+   "file": "f0002.png",
+   "bbox": [
+    10,
+    12,
+    77,
+    88
+   ]
+  },
+  "back": null
+ },
+ "source": {
+  "dir": "D:\\dsh\\demo\\demo1\\dsh-pet-kit\\examples\\keyed",
+  "files": 5,
+  "generator": "pack_sheet.py (per-group fit-to-box, 与 sprites.mjs states --precut 同语义)",
+  "cellBox": {
+   "w": 84,
+   "h": 88
+  },
+  "baseline": 100,
+  "groups": {
+   "idle": {
+    "frames": 5,
+    "unionBBox": [
+     172,
+     10,
+     477,
+     359
+    ],
+    "scale": 0.25143,
+    "contentWH": [
+     77,
+     88
+    ]
+   }
+  },
+  "quarantined": [
+   {
+    "file": "demo/f0276.png",
+    "contentWH": [
+     1047,
+     639
+    ],
+    "reason": "内容超过 --max-content 400（异规格隔离，规则15：基准必须是常量，不能被离群大图拖垮）"
+   },
+   {
+    "file": "demo/f0300.png",
+    "contentWH": [
+     524,
+     317
+    ],
+    "reason": "内容超过 --max-content 400（异规格隔离，规则15：基准必须是常量，不能被离群大图拖垮）"
+   }
+  ],
+  "note": "每组各自 fit-to-box，组内共用一个裁切框+缩放+落点（零放置抖动）；底边对齐 baselineY、水平居中；脚底/质心跨度=真实动作幅度；fill-from-idle 代填状态：walk,react,working,sleep,dead,supervise（demo 复用 idle 帧序列，非真实动作素材）",
+  "generatedAt": "2026-09-13T12:07:49.723398"
+ }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "dsh-pet-bg",
+  "version": "0.1.0",
+  "description": "DSH Web 桌宠 + 背景视频控制面板：三视图驱动的 Canvas 精灵动画（拖动 / 点击反应 / 右键菜单 / 滚轮缩放 / 空闲漫游 / 会话状态联动），加一层可控的背景视频（模糊 / 亮度 / 播放速度 / 音量静音 / 循环暂停），媒体进 IndexedDB、参数进 localStorage。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "tools",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "desktop-pet",
+    "spritesheet",
+    "background-video"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ]
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

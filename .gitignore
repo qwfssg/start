@@ -1,0 +1,30 @@
+# ---- 素材与产物：按目录明确排除（不按体积一刀切，避免误杀 examples 的示例小图）----
+/vframes/
+/bg*/
+/qanimal-cut*/
+/backup-*/
+node_modules/
+.edge-profile/
+verify*.html
+verify-*.log
+tmp-*.py
+tmp-*.cjs
+__pycache__/
+
+# ---- 生成物（可由 build.ps1 / embed-sheet / assemble 重建，不入库）----
+# sheet.js 是 embed-sheet.mjs 从 assets/spritesheet.png 生成的 base64 内嵌产物
+plugin/src/sheet.js
+# lib/client.js 是 assemble.mjs 的合并产物；lib/index.js 是手写宿主入口，必须入库
+plugin/lib/*
+!plugin/lib/index.js
+
+# ---- 本地工作目录 / 大文件 ----
+*.mp4
+*.avi
+/frames/
+/cut/
+/keyed/
+/out/
+.tmp/
+.build/
+tmp-kit-clone/
