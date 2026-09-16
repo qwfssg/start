@@ -140,7 +140,3 @@ git remote add origin https://gitee.com/<user>/<repo>.git
 git push -u origin master
 ```
 
-- 仓库提交总体积实测 **12.91MB（66 文件，`git ls-files` 求和）**、单文件最大 1.46MB（examples 的 contact sheet）⇒ **不需要 Git LFS**（Gitee 免费版单文件上限 100MB）。
-- 若日后把正式大图集（如 319 格 8.94MB PNG）入库，建议改用外挂路由方案（docs/07）而不是塞进 git；
-  单文件 >50MB 时 Gitee 会警告，>100MB 会被拒绝，那时才需要 LFS。
-- 别忘了把 `LICENSE` 里的 `Copyright (c) 2026 <your name>` 改成你的名字。
