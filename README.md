@@ -132,11 +132,3 @@ embed-sheet 的硬限卡的是 **base64 体积**（≈PNG×1.34），不是 PNG 
 （内嵌 data-URL / 外挂 HTTP 路由 / IndexedDB 导入）的取舍表见 `docs/07-体积与架构权衡.md`。
 本仓库示例图集刻意做到极小，让克隆→构建→冒烟在几秒内完成。
 
-## 上传到 Gitee（本仓库不含远端，请自行执行）
-
-```powershell
-cd dsh-pet-kit
-git remote add origin https://gitee.com/<user>/<repo>.git
-git push -u origin master
-```
-
